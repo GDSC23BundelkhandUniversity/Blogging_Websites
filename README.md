@@ -38,6 +38,13 @@ At BlogwithUs, we pride ourselves on our commitment to quality, inclusivity, and
 Join us on this exciting journey, and let's create, connect, and inspire together.
 
 
+## Preview
+
+![Dashboard Design](https://github.com/GDSC23BundelkhandUniversity/Blogging_Websites/assets/140693649/7cad8ef4-3d64-4df5-a41f-89ef8fceea2f)
+
+![contact Blogwithus](https://github.com/GDSC23BundelkhandUniversity/Blogging_Websites/assets/140693649/4b886cc9-638e-4c1f-8a8a-65f70440bfd4)
+
+
 
 ## Features
 Here's an overview of some of the key features of our website:
