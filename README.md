@@ -1,4 +1,5 @@
 # Blogging_Websites(BlogwithUs)
+![BlogwithUs Logo](https://github.com/GDSC23BundelkhandUniversity/Blogging_Websites/assets/140693649/2d7298a7-a53a-474e-bf0e-85adc43a8999)
 Welcome to BlogwithUs! This project provides a platform for bloggers to create, share, and connect. 
 ## About Us
 
