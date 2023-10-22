@@ -1,6 +1,9 @@
 # Blogging_Websites(BlogwithUs)
-![BlogwithUs Logo](https://github.com/GDSC23BundelkhandUniversity/Blogging_Websites/assets/140693649/2d7298a7-a53a-474e-bf0e-85adc43a8999)
-Welcome to BlogwithUs! This project provides a platform for bloggers to create, share, and connect. 
+<img src="https://github.com/GDSC23BundelkhandUniversity/Blogging_Websites/assets/140693649/2d7298a7-a53a-474e-bf0e-85adc43a8999" width="400" height="320">
+
+
+Welcome to BlogwithUs! This project provides a platform for bloggers to create, share, and connect.
+
 ## About Us
 
 We are a passionate community of writers, readers, and dreamers who believe in the power of storytelling. Our journey began with the simple idea that everyone has a story worth sharing, and we wanted to provide a platform where those stories could come to life.
@@ -9,24 +12,25 @@ We are a passionate community of writers, readers, and dreamers who believe in t
 Our mission is to inspire, connect, and empower. We strive to create a space where voices are heard, perspectives are appreciated, and connections are made. We believe in the magic of human expression, and we're here to celebrate it.
 
 ## Meet Our Team
-Vaishali Yadav(Team Captain)
-Anurag
-Bipul Shukla
-Harshit
-Ravikant Sahu
-Sakshi Agarwal
-Shilki
-Shivangi
-Shristi
-Tripti
+- Vaishali Yadav(Team Captain)
+- Anurag
+- Bipul Shukla
+- Harshit
+- Ravikant Sahu
+- Sakshi Agarwal
+- Shilki
+- Shivangi
+- Shristi
+- Tripti
 
 We're a diverse team of individuals who share a common goal: to foster a welcoming and inclusive community where creativity knows no bounds.
+
 ## Tech Stacks
-HTML
-CSS
-JavaScript
-PHP
-MySQL
+- HTML
+- CSS
+- JavaScript
+- PHP
+- MySQL
 
 ## What Sets Us Apart
 At BlogwithUs, we pride ourselves on our commitment to quality, inclusivity, and the belief that every voice matters. Our platform is designed to be a safe and creative space for you to share your experiences, knowledge, and passions with the world.
