@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+    .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #1a3152;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.brand h1 {
+    margin: 0;
+    padding: 0 10px;
+    font-family: 'Agbalumo', serif;
+}
+
+.brand img {
+    width: 80px; 
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+   align-items: center; 
+   font-family: "Lobster";
+}
+
+.nav-menu ul li {
+    margin: 0 10px;
+    /* font-size: 1rem; */
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    padding: 5px;
+    border: none;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.search-box button {
+    padding: 5px 10px;
+    background-color: #555;
+    color: #e2f0f5;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.nav-menu ul .has-dropdown .sub-menu {
+    display: none;
+    position: absolute;
+    /* background: #fff; */
+    border: 1px solid #a097cf;
+    z-index: 100;
+}
+
+.nav-menu ul .has-dropdown:hover .sub-menu {
+    display: block;
+    background-color: rgb(51, 66, 118);
+    padding: 10px;
+}
+
+.nav-menu ul .has-dropdown .sub-menu li {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-wrap: wrap;
+    }
+
+    .brand {
+        order: 1;
+        flex: 1 0 100%;
+        margin-bottom: 10px;
+    }
+
+    .nav-menu {
+        display: none;
+        order: 3;
+        width: 100%;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        order: 2;
+        cursor: pointer;
+        font-size: 25px;
+        padding: 15px 10px;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        padding: 15px;
+        background-color: #3d515b;
+    }
+
+    .nav-menu ul li {
+        margin: 10px 0;
+    }
+
+    .search-box {
+        order: 4;
+        width: 100%;
+    }
+}
+
+/* Toggle navigation menu when the checkbox is checked */
+#menu-toggle:checked + .nav-menu ul{
+    display: block;
+}
+
+
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 6px;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+
+    .about-section {
+      padding: 80px;
+      text-align: center;
+      background-color: #00A9FF;
+      color: rgb(17, 16, 16);
+    }
+
+    .last-section {
+      padding: 80px;
+      text-align: center;
+      background-color: #89CFF3;
+      color: rgb(17, 16, 16);
+    }
+
+
+    .container {
+      padding: 0 15px;
+    }
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: rgb(57, 152, 230);
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 15px;
+      color: rgba(10, 10, 10, 0.427);
+      background-color: #5545e6;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #558ca3;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    /* Footer section */
+.site-footer {
+    background-color: #1a3152;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+.cont {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <div class="brand">
+        <a href="#"><img src="image/logos/BlogwithUs Logo.png" alt="Logo"></a>
+        <h1><a href="#">BlogwithUs</a></h1>
+      </div>
+
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <!-- <input type="checkbox" id="menu-toggle" /> -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="has-dropdown">
+            <a href="#">Categories</a>
+            <ul class="sub-menu">
+              <li><a href="#">Science and Technology</a></li>
+              <li><a href="#">Food</a></li>
+              <li><a href="#">Travel</a></li>
+              <li><a href="#">Space</a></li>
+              <li><a href="#">Culture</a></li>
+              <li><a href="#">nature</a></li>
+              <li><a href="#">Forest</a></li>
+              <li><a href="#">Fashion</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Wildlife</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Health and fitness</a></li>
+            </ul>
+          </li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index2.html">Login</a></li>
+        </ul>
+      </nav>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+      </div>
+    </div>
+  </header>
+<br><br><br><br><br>
+  <div class="about-section">
+    <h1><u>About Us</u></h1>
+    <h4>Welcome to BlogwithUs! We are a passionate community of writers, readers, and dreamers who believe in the power
+      of storytelling. Our journey began with the simple idea that everyone has a story worth sharing, and we wanted to
+      provide a platform where those stories could come to life.
+    </h4>
+  </div>
+  <div class="last-section">
+    <h1><u>Our Mission</u>
+    </h1>
+    <h4>Our mission is to inspire, connect, and empower. We strive to create a space where voices are heard,
+      perspectives are appreciated, and connections are made. We believe in the magic of human expression, and we're
+      here to celebrate it.</h4>
+
+  </div>
+
+  <h2 style="text-align:center"> Meet Our Team</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="vaishali.jpg" alt="vaishali" style="width:100%">
+        <div class="container">
+          <h2>Vaishali</h2>
+          <p class="title">Team Captain</p>
+          <p>frontend developer|c++|DSA|</p>
+          <p>html|css|javascript</p>
+          <a href="https://www.linkedin.com/in/vaishali0yadav/">linkedIn id</a>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    
+  
+  <div class="column">
+    <div class="card">
+      <img src="bipul.jpg" alt="bipul" style="width:100%">
+      <div class="container">
+        <h2>Bipul shukla</h2>
+        <p class="title">UI/UX Designer</p>
+        <p>Graphics Designer | ECE department,bu jhansi</p>
+        <a href="https://www.linkedin.com/in/bipul-shukla/">linkedIn id</a>
+
+
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="anurag2.jpg" alt="anurag" style="width:100%">
+      <div class="container">
+        <h2>Anurag puri</h2>
+        <p class="title">frontend developer</p>
+        <p>bca 1st year,gdsc community member BU,skills-html,css</p>
+        <a href="https://www.linkedin.com/in/anurag-puri-58b13b294/">linkedIn id</a>
+
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="shilki.jpg" alt="shilki" style="width:100%">
+        <div class="container">
+          <h2>Shilki</h2>
+          <p class="title">frontend developer</p>
+          <p>bca 2nd year,skills-html|css|c++|c and DSA</p>
+          <a href="https://www.linkedin.com/in/shilki-badal-123116272/">linkedIn id</a>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="srishti.jpg" alt="srishti  singh" style="width:100%">
+        <div class="container">
+          <h2>Srishti singh</h2>
+          <p class="title">UI/UX designer</p>
+          <p>UI designer</p>
+          <p>Member of GDSC BU</p>
+          <a href="https://www.linkedin.com/in/srishti-singh-b4b309287/">linkedIn id</a>
+
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="ravikant.jpg" alt="ravikant" style="width:100%">
+        <div class="container">
+          <h2>Ravi Kant Sahu</h2>
+          <p class="title">frontend/backend</p>
+          <p>Member of GDSC BU |html|CSS|javascript|</p>
+          <a href="https://www.linkedin.com/in/ravi-kant-sahu-90151b259/">linkedIn id</a>
+
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+     </div>
+     <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="dubey.jpg" alt="tripti" style="width:100%">
+        <div class="container">
+          <h2>tripti dubey</h2>
+          <p class="title">UI/UX Developer</p>
+          <p>persuing 2nd year in iCE department</p>
+          <a href="https://www.linkedin.com/in/tripti-dubey-3760b5259/">linkedIn id</a>
+
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about-section">
+    <h4>We're a diverse team of individuals who share a common goal: to foster a welcoming and inclusive community where
+      creativity knows no bounds.
+
+    </h4>
+  </div>
+  <div class="last-section">
+
+    <h1><u>What sets us apart</u></h1>
+    <h4>At BlogwithUs, we pride ourselves on our commitment to quality, inclusivity, and the belief that every voice
+      matters. Our platform is designed to be a safe and creative space for you to share your experiences, knowledge,
+      and passions with the world.
+    </h4>
+    <h3>Join us on this exciting journey, and let's create, connect, and inspire together. </h3>
+    <p><button class="button">Join Us</button></p>
+
+
+
+  </div>
+  <footer class="site-footer">
+    <div class="cont">
+        <div class="footer-links">
+            <ul>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/blog">Home</a></li>
+                <li><a href="/categories">Categories</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <p>Contact us at : blogwithus@email.com</p>
+            <p>123 Street, City, Country</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com"><img src="image/logos/facebook-logo.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com"><img src="image/logos/twitter-logo.png" alt="Twitter"></a>
+            <a href="http://www.instagram.com"><img src="image/logos/instagram-logo.png" alt="Instagram"></a>
+            <a href="http://www.linkedin.com"><img src="image/logos/linkedin logo.png" alt="Linkedin"></a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2023 BlogwithUs. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=sdge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link rel=" preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a13ccb7466.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <div class="brand">
+                <a href="#"><img src="image/logos/BlogwithUs Logo.png" alt="Logo"></a>
+                <h1><a href="#">BlogwithUs</a></h1>
+            </div>
+
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <!-- <input type="checkbox" id="menu-toggle" /> -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="has-dropdown">
+                        <a href="#">Categories</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Science and Technology</a></li>
+                            <li><a href="#">Food</a></li>
+                            <li><a href="#">Travel</a></li>
+                            <li><a href="#">Space</a></li>
+                            <li><a href="#">Culture</a></li>
+                            <li><a href="#">nature</a></li>
+                            <li><a href="#">Forest</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Wildlife</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Health and fitness</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="index2.html">Login</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </header><br><br><br><br><br><br><br>
+
+
+    <!--------------contact------------------>
+    <div id="contact">
+        <div class="containe">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Us</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>gdscbu.official@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://https://t.me/gdsc_bu23telegram"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://x.com/gdsc_bu?t=O5VVCEaO6ZzMlWAp-710fA&s=09"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://instagram.com/gdsc_bu?igshid=MzRlODBiNWFlZA=="><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://gdsc.community.dev/bundelkhand-university-jhansi/"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/GDSC23BU"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/company/developer-student-club-bu/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://youtube.com/@gdscbu5415?si=kWS8GnlMlE7IO4Ui"><i
+                                class="fa-brands fa-youtube"></i></a>
+
+                    </div>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="copyright">
+            <p> copyright <i class="fa-regular fa-copyright"></i> by GDSC_BU</p>
+        </div> -->
+    </div>
+
+    <footer class="site-footer">
+        <div class="cont">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/blog">Home</a></li>
+                    <li><a href="/categories">Categories</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <p>Contact us at : blogwithus@email.com</p>
+                <p>123 Street, City, Country</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com"><img src="image/logos/facebook-logo.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com"><img src="image/logos/twitter-logo.png" alt="Twitter"></a>
+                <a href="http://www.instagram.com"><img src="image/logos/instagram-logo.png" alt="Instagram"></a>
+                <a href="http://www.linkedin.com"><img src="image/logos/linkedin logo.png" alt="Linkedin"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 BlogwithUs. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabconetent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementsById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementsById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = '<https://script.google.com/macros/s/AKfycbySpKDw-mt0V5zoMI9FINd3ofFsaHba6-YG7TB-GuNu-KjNOJGuuFQMWwYoaelODCi2/exec>'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+
+    </script>
+</body>
+
+</html>
